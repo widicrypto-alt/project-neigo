@@ -1,0 +1,40 @@
+[
+  {
+    "path": "/*",
+    "timings": [
+      { "metric": "first-contentful-paint", "budget": 1800 },
+      { "metric": "largest-contentful-paint", "budget": 2500 },
+      { "metric": "interactive", "budget": 3000 },
+      { "metric": "speed-index", "budget": 2500 },
+      { "metric": "total-blocking-time", "budget": 300 },
+      { "metric": "cumulative-layout-shift", "budget": 100 }
+    ],
+    "resourceSizes": [
+      { "resourceType": "script", "budget": 180 },
+      { "resourceType": "stylesheet", "budget": 50 },
+      { "resourceType": "image", "budget": 400 },
+      { "resourceType": "font", "budget": 120 },
+      { "resourceType": "document", "budget": 30 },
+      { "resourceType": "third-party", "budget": 30 },
+      { "resourceType": "total", "budget": 900 }
+    ],
+    "resourceCounts": [
+      { "resourceType": "script", "budget": 14 },
+      { "resourceType": "stylesheet", "budget": 4 },
+      { "resourceType": "third-party", "budget": 4 },
+      { "resourceType": "total", "budget": 60 }
+    ]
+  },
+  {
+    "path": "/chat/*",
+    "timings": [
+      { "metric": "first-contentful-paint", "budget": 1800 },
+      { "metric": "interactive", "budget": 3000 }
+    ],
+    "resourceSizes": [
+      { "resourceType": "script", "budget": 220 },
+      { "resourceType": "image", "budget": 350 },
+      { "resourceType": "total", "budget": 1100 }
+    ]
+  }
+]

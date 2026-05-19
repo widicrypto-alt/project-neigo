@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07080f"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#831843"/>
+    </linearGradient>
+    <radialGradient id="hr1" cx="0.25" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0b0d17" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hr2" cx="0.8" cy="0.7" r="0.5">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0b0d17" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hb"><feGaussianBlur stdDeviation="60"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#hg)"/>
+  <rect width="1600" height="900" fill="url(#hr1)"/>
+  <rect width="1600" height="900" fill="url(#hr2)"/>
+  <g filter="url(#hb)" opacity="0.4">
+    <circle cx="400" cy="200" r="200" fill="#f472b6"/>
+    <circle cx="1200" cy="700" r="220" fill="#8b5cf6"/>
+    <circle cx="900" cy="300" r="160" fill="#fbcfe8"/>
+  </g>
+  <g fill="#fce7f3" opacity="0.04">
+    <text x="50%" y="70%" font-size="600" font-family="serif" font-style="italic" text-anchor="middle">星</text>
+  </g>
+</svg>

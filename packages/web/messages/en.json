@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "Project Neigo",
+    "tagline": "星夜詠み",
+    "back": "Back",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "send": "Send",
+    "start": "Start",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "signOut": "Sign out",
+    "delete": "Delete",
+    "you": "You",
+    "character": "Character",
+    "backToHome": "Back to Home"
+  },
+  "vn": {
+    "nextScene": "Next scene",
+    "theEnd": "The end",
+    "sceneChange": "Scene change",
+    "advanceScene": "Advance to next scene",
+    "disableMode": "Disable VN mode",
+    "restart": "Restart",
+    "delete": "Delete",
+    "endingReached": "Ending reached",
+    "endingBanner": "Ending reached: {slug}",
+    "chapterOne": "Chapter One · The Summoning"
+  },
+  "chat": {
+    "composer": {
+      "placeholder": "Enter your response...",
+      "tierLimit": "Turn limit reached",
+      "turnFailed": "Last turn failed",
+      "turnFailedFallback": "Character did not finish the last reply.",
+      "apiKey": "API Key",
+      "retry": "Retry",
+      "incompleteTitle": "Response may be incomplete",
+      "incompleteBody": "The character's response was cut short.",
+      "continue": "Continue"
+    },
+    "cyoa": {
+      "groupLabel": "CHOOSE YOUR PATH",
+      "chipLabel": "Send: {label}",
+      "custom": "Write your own fate..."
+    },
+    "actions": {
+      "rewrite": "Rewrite Fate",
+      "rewind": "Rewind",
+      "branch": "Branch",
+      "branchConfirm": "Create a new branch from this point? You will be moved to a new conversation.",
+      "resume": "Continue",
+      "clear": "Clear"
+    },
+    "status": {
+      "offline": "Leyline Severed",
+      "reconnecting": "Attempting to restore connection...",
+      "continuing": "continuing the tale..."
+    },
+    "notifications": {
+      "moodChange": "The atmosphere shifts: {mood}",
+      "undoFailed": "Failed to rewind the conversation."
+    },
+    "sfx": {
+      "candlelight": "Crackling fireplace...",
+      "moonlight": "Crickets in the night...",
+      "dawn": "Morning birdsong...",
+      "daylight": "Soft whispering wind...",
+      "dusk": "Evening stillness...",
+      "night": "Silent deep night..."
+    }
+  },
+  "threads": {
+    "title": "Threads",
+    "newThread": "New Thread",
+    "emptyState": {
+      "title": "Start your first story.",
+      "description": "Pick a character, set the mood, and create your dream scenario. Threads you create will be saved here.",
+      "discover": "Discover Stories",
+      "discoverCharacters": "Discover Characters",
+      "emptyScene": "Open Empty Scene",
+      "fallback": "No conversations yet. Continue to start storytelling."
+    },
+    "featured": {
+      "lastPlayed": "Last Played",
+      "continue": "Continue"
+    },
+    "delete": {
+      "confirm": "Permanently delete this thread?",
+      "confirmShort": "Delete this thread?",
+      "action": "Delete"
+    },
+    "newModal": {
+      "eyebrow": "New thread · 新章",
+      "title": "Open a scene.",
+      "character": "Character",
+      "characterHint": "Create a character first to open a scene.",
+      "model": "Model",
+      "modelHint": "per session",
+      "byokNote": "Non-default models require a valid BYOK key in settings.",
+      "premise": "Premise",
+      "premiseOptional": "optional",
+      "premiseHint": "One sentence. Set the weather, the feeling, or what just happened.",
+      "advanced": "Advanced Scene Setup",
+      "advancedHint": "Optional context for more precise opening tone.",
+      "reset": "Reset advanced preset",
+      "generate": "Generate scene",
+      "generating": "Generating...",
+      "povHint": "Keep the narrative point of view consistent.",
+      "opening": "Opening...",
+      "openAction": "Open scene"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "discover": "Discover",
+    "roleplay": "Threads",
+    "studio": "Studio",
+    "settings": "Persona",
+    "ariaMain": "Main navigation"
+  },
+  "feed": {
+    "title": "Creators You Follow",
+    "loading": "Loading feed...",
+    "unauthed": "Please {login} to view your feed.",
+    "login": "sign in",
+    "empty": "No content yet from creators you follow.",
+    "followHint": "Follow creators from their profile pages to see updates here.",
+    "latestStories": "Latest Stories",
+    "latestCharacters": "Latest Characters",
+    "updated": "Updated {date}"
+  },
+  "character": {
+    "notFound": "Character not found.",
+    "startFailed": "Failed to start conversation.",
+    "chatAction": "Chat with {name}",
+    "starting": "Starting...",
+    "owner": "by {name}",
+    "edit": "Edit Character",
+    "create": "Create Character",
+    "save": "Save Character",
+    "delete": "Delete Character",
+    "deleteConfirm": "Delete this character? All their stories remain but they won't be attributed to you.",
+    "about": "About",
+    "lore": "Lore",
+    "dialogue": "Dialogue"
+  },
+  "discover": {
+    "title": "Discover",
+    "search": "Search scenarios or characters...",
+    "filter": "Filter",
+    "sort": "Sort",
+    "empty": "No scenarios found matching your search.",
+    "trending": "Trending",
+    "newest": "Newest",
+    "featured": "Featured",
+    "categories": "Categories"
+  },
+  "mc": {
+    "editor": {
+      "createTitle": "Create Persona",
+      "editTitle": "Edit Persona",
+      "description": "Define who you are in the story. Characters will perceive you based on this profile.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name in the story",
+      "avatarLabel": "Avatar URL",
+      "avatarPlaceholder": "https://...",
+      "avatarHint": "Use a square image for best results.",
+      "personalityLabel": "Personality",
+      "personalityPlaceholder": "Describe how you behave...",
+      "defaultLabel": "Set as default",
+      "defaultHint": "Automatically use this persona for new threads.",
+      "saveSuccess": "Persona saved successfully.",
+      "createSuccess": "Persona created!",
+      "updateSuccess": "Persona updated!",
+      "deleteSuccess": "Persona deleted.",
+      "deleteConfirm": "Are you sure you want to delete this persona?",
+      "nameError": "Please enter a name.",
+      "personalityError": "Please describe your personality.",
+      "saveFailed": "Failed to save persona."
+    },
+    "selector": {
+      "title": "Choose your persona",
+      "createLabel": "Create New Persona",
+      "empty": "No personas yet. Create one to get started!",
+      "useCharacter": "Use {name} as MC",
+      "anonymous": "Anonymous / Narrator only",
+      "isDefault": "Default",
+      "setDefault": "Set as default",
+      "createFailed": "Failed to create persona",
+      "charactersTab": "Characters",
+      "quickSelect": "Quick Access",
+      "myPersonas": "My Personas",
+      "availableCharacters": "Story Characters",
+      "anonymousLabel": "Anonymous / No Persona",
+      "anonymousHint": "Start story as a narrator or anonymous character.",
+      "emptyState": "No personas yet",
+      "emptyHint": "Create one to personalize your story.",
+      "charactersEmpty": "No characters",
+      "charactersHint": "Characters you create will appear here.",
+      "startStory": "Start Story",
+      "startFailed": "Failed to start story",
+      "startAction": "Start Adventure"
+    }
+  },
+  "consent": {
+    "title": "Your Privacy, Your Choice",
+    "body": "We use cookies to enhance your storytelling experience and analyze site traffic.",
+    "readPolicy": "Privacy Policy",
+    "acceptAll": "Accept All",
+    "rejectOptional": "Essentials Only",
+    "openSettings": "Customize Preferences",
+    "sheetTitle": "Consent Preferences",
+    "sheetDescription": "Manage how your data is used. Essential cookies cannot be disabled as they are required for the app to function.",
+    "essentialTitle": "Essential",
+    "essentialDescription": "Required for authentication, security, and core features.",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Helps us understand how you use the app to improve the experience.",
+    "personalisationTitle": "Personalisation",
+    "personalisationDescription": "Remembers your preferences and AI model selections.",
+    "save": "Save Preferences"
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "consentSection": "Data consent",
+      "rightsSection": "Your rights",
+      "exportTitle": "Export my data",
+      "exportDescription": "Download all transcripts, characters, and account metadata.",
+      "exportToastTitle": "Export request sent",
+      "exportToastDescription": "We'll email the JSON file within 48 hours per PDP Law.",
+      "deleteTitle": "Delete account",
+      "deleteDescription": "Permanently delete your data within 30 days.",
+      "deleteToastTitle": "Email confirmation required",
+      "deleteToastDescription": "Check your inbox to complete account deletion.",
+      "revokeTitle": "Revoke all consents",
+      "revokeDescription": "The consent banner will appear again.",
+      "revokeToastTitle": "Consents revoked",
+      "footerNote": "Project Neigo complies with Indonesia's Law No. 27/2022 on Personal Data Protection.",
+      "readFullPolicy": "Read full privacy policy"
+    }
+  }
+}

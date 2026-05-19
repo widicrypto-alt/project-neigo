@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "Project Neigo",
+    "tagline": "星夜詠mi",
+    "back": "Kembali",
+    "close": "Tutup",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "send": "Kirim",
+    "start": "Mulai",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "retry": "Coba lagi",
+    "signOut": "Keluar",
+    "delete": "Hapus",
+    "you": "Anda",
+    "character": "Karakter",
+    "backToHome": "Kembali ke Beranda"
+  },
+  "vn": {
+    "nextScene": "Adegan Berikutnya",
+    "theEnd": "Tamat",
+    "sceneChange": "Perubahan Adegan",
+    "advanceScene": "Lanjut ke adegan berikutnya",
+    "disableMode": "Matikan mode VN",
+    "restart": "Ulangi",
+    "delete": "Hapus",
+    "endingReached": "Ending tercapai",
+    "endingBanner": "Ending tercapai: {slug}",
+    "chapterOne": "Bab Satu · Pemanggilan"
+  },
+  "chat": {
+    "composer": {
+      "placeholder": "Ketik respons kamu...",
+      "tierLimit": "Batas giliran tercapai",
+      "turnFailed": "Gagal merespons",
+      "turnFailedFallback": "Karakter tidak menyelesaikan balasan terakhir.",
+      "apiKey": "API Key",
+      "retry": "Coba Lagi",
+      "incompleteTitle": "Respons mungkin tidak lengkap",
+      "incompleteBody": "Respons karakter terpotong.",
+      "continue": "Lanjutkan"
+    },
+    "cyoa": {
+      "groupLabel": "PILIH JALURMU",
+      "chipLabel": "Kirim: {label}",
+      "custom": "Tulis takdirmu sendiri..."
+    },
+    "actions": {
+      "rewrite": "Ubah Takdir",
+      "rewind": "Putar Balik",
+      "branch": "Cabang",
+      "branchConfirm": "Buat cabang baru dari titik ini? Kamu akan dipindahkan ke percakapan baru.",
+      "resume": "Lanjutkan",
+      "clear": "Bersihkan"
+    },
+    "status": {
+      "offline": "Leyline Terputus",
+      "reconnecting": "Mencoba memulihkan koneksi...",
+      "continuing": "melanjutkan kisah..."
+    },
+    "notifications": {
+      "moodChange": "Suasana berubah: {mood}",
+      "undoFailed": "Gagal memutar balik percakapan."
+    },
+    "sfx": {
+      "candlelight": "Perapian berderak...",
+      "moonlight": "Jangkrik di malam hari...",
+      "dawn": "Kicauan burung pagi...",
+      "daylight": "Angin sepoi-sepoi...",
+      "dusk": "Keheningan sore...",
+      "night": "Malam yang sunyi..."
+    }
+  },
+  "threads": {
+    "title": "Threads",
+    "newThread": "Thread Baru",
+    "emptyState": {
+      "title": "Mulai cerita pertamamu.",
+      "description": "Pilih karakter, tentukan suasana, dan buat skenario impianmu. Thread yang kamu buat akan disimpan di sini.",
+      "discover": "Temukan Cerita",
+      "discoverCharacters": "Temukan Karakter",
+      "emptyScene": "Buka Skenario Kosong",
+      "fallback": "Belum ada percakapan. Lanjutkan untuk mulai bercerita."
+    },
+    "featured": {
+      "lastPlayed": "Terakhir Dimainkan",
+      "continue": "Lanjutkan"
+    },
+    "delete": {
+      "confirm": "Hapus thread ini secara permanen?",
+      "confirmShort": "Hapus thread ini?",
+      "action": "Hapus"
+    },
+    "newModal": {
+      "eyebrow": "Thread baru · 新章",
+      "title": "Buka skenario.",
+      "character": "Karakter",
+      "characterHint": "Buat karakter terlebih dahulu untuk membuka skenario.",
+      "model": "Model",
+      "modelHint": "per sesi",
+      "byokNote": "Model non-default memerlukan API key valid di pengaturan.",
+      "premise": "Premis",
+      "premiseOptional": "opsional",
+      "premiseHint": "Satu kalimat. Tentukan cuaca, perasaan, atau apa yang baru saja terjadi.",
+      "advanced": "Pengaturan Skenario Lanjutan",
+      "advancedHint": "Konteks opsional untuk nada pembuka yang lebih presisi.",
+      "reset": "Reset preset lanjutan",
+      "generate": "Generate skenario",
+      "generating": "Menghasilkan...",
+      "povHint": "Pastikan sudut pandang narasi tetap konsisten.",
+      "opening": "Membuka...",
+      "openAction": "Buka skenario"
+    }
+  },
+  "nav": {
+    "home": "Beranda",
+    "discover": "Jelajah",
+    "roleplay": "Threads",
+    "studio": "Studio",
+    "settings": "Persona",
+    "ariaMain": "Navigasi utama"
+  },
+  "feed": {
+    "title": "Kreator yang Kamu Ikuti",
+    "loading": "Memuat feed...",
+    "unauthed": "Silakan {login} untuk melihat feed kamu.",
+    "login": "masuk",
+    "empty": "Belum ada konten dari kreator yang kamu ikuti.",
+    "followHint": "Ikuti kreator dari halaman profil mereka untuk melihat update di sini.",
+    "latestStories": "Skenario Terbaru",
+    "latestCharacters": "Karakter Terbaru",
+    "updated": "Diperbarui {date}"
+  },
+  "character": {
+    "notFound": "Karakter tidak ditemukan.",
+    "startFailed": "Gagal memulai percakapan.",
+    "chatAction": "Chat dengan {name}",
+    "starting": "Memulai...",
+    "owner": "oleh {name}",
+    "edit": "Edit Karakter",
+    "create": "Buat Karakter",
+    "save": "Simpan Karakter",
+    "delete": "Hapus Karakter",
+    "deleteConfirm": "Hapus karakter ini? Semua cerita mereka akan tetap ada tetapi tidak akan diatribusikan kepadamu.",
+    "about": "Tentang",
+    "lore": "Lore",
+    "dialogue": "Dialog"
+  },
+  "discover": {
+    "title": "Jelajah",
+    "search": "Cari skenario atau karakter...",
+    "filter": "Filter",
+    "sort": "Urutkan",
+    "empty": "Tidak ada skenario yang cocok dengan pencarianmu.",
+    "trending": "Trending",
+    "newest": "Terbaru",
+    "featured": "Unggulan",
+    "categories": "Kategori"
+  },
+  "mc": {
+    "editor": {
+      "createTitle": "Buat Persona",
+      "editTitle": "Edit Persona",
+      "description": "Tentukan siapa kamu dalam cerita. Karakter akan mengenalimu berdasarkan profil ini.",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Namamu dalam cerita",
+      "avatarLabel": "URL Avatar",
+      "avatarPlaceholder": "https://...",
+      "avatarHint": "Gunakan gambar persegi untuk hasil terbaik.",
+      "personalityLabel": "Kepribadian",
+      "personalityPlaceholder": "Gambarkan bagaimana perilakumu...",
+      "defaultLabel": "Setel sebagai default",
+      "defaultHint": "Gunakan persona ini secara otomatis untuk thread baru.",
+      "saveSuccess": "Persona berhasil disimpan.",
+      "createSuccess": "Persona dibuat!",
+      "updateSuccess": "Persona diperbarui!",
+      "deleteSuccess": "Persona dihapus.",
+      "deleteConfirm": "Apakah kamu yakin ingin menghapus persona ini?",
+      "nameError": "Silakan masukkan nama.",
+      "personalityError": "Silakan gambarkan kepribadianmu.",
+      "saveFailed": "Gagal menyimpan persona."
+    },
+    "selector": {
+      "title": "Pilih personamu",
+      "createLabel": "Buat Persona Baru",
+      "empty": "Belum ada persona. Buat satu untuk memulai!",
+      "useCharacter": "Gunakan {name} sebagai MC",
+      "anonymous": "Anonim / Hanya Narator",
+      "isDefault": "Default",
+      "setDefault": "Setel sebagai default",
+      "createFailed": "Gagal membuat persona",
+      "charactersTab": "Karakter",
+      "quickSelect": "Akses Cepat",
+      "myPersonas": "Persona Saya",
+      "availableCharacters": "Karakter Cerita",
+      "anonymousLabel": "Anonim / Tanpa Persona",
+      "anonymousHint": "Mulai cerita sebagai narator atau karakter anonim.",
+      "emptyState": "Belum ada persona",
+      "emptyHint": "Buat satu untuk mempersonalisasi ceritamu.",
+      "charactersEmpty": "Tidak ada karakter",
+      "charactersHint": "Karakter yang kamu buat akan muncul di sini.",
+      "startStory": "Mulai Cerita",
+      "startFailed": "Gagal memulai cerita",
+      "startAction": "Mulai Petualangan"
+    }
+  },
+  "consent": {
+    "title": "Privasi Anda, Pilihan Anda",
+    "body": "Kami menggunakan cookie untuk meningkatkan pengalaman bercerita Anda dan menganalisis lalu lintas situs.",
+    "readPolicy": "Kebijakan Privasi",
+    "acceptAll": "Terima Semua",
+    "rejectOptional": "Hanya yang Penting",
+    "openSettings": "Sesuaikan Preferensi",
+    "sheetTitle": "Preferensi Persetujuan",
+    "sheetDescription": "Kelola bagaimana data Anda digunakan. Cookie penting tidak dapat dinonaktifkan karena diperlukan agar aplikasi dapat berfungsi.",
+    "essentialTitle": "Penting",
+    "essentialDescription": "Diperlukan untuk otentikasi, keamanan, dan fitur inti.",
+    "analyticsTitle": "Analitik",
+    "analyticsDescription": "Membantu kami memahami bagaimana Anda menggunakan aplikasi untuk meningkatkan pengalaman.",
+    "personalisationTitle": "Personalisasi",
+    "personalisationDescription": "Mengingat preferensi Anda dan pilihan model AI.",
+    "save": "Simpan Preferensi"
+  },
+  "legal": {
+    "terms": {
+      "title": "Ketentuan Layanan"
+    },
+    "privacy": {
+      "title": "Privasi",
+      "consentSection": "Persetujuan data",
+      "rightsSection": "Hak-hak Anda",
+      "exportTitle": "Ekspor data saya",
+      "exportDescription": "Unduh semua transkrip, karakter, dan metadata akun.",
+      "exportToastTitle": "Permintaan ekspor terkirim",
+      "exportToastDescription": "Kami akan mengirimkan file JSON melalui email dalam waktu 48 jam sesuai UU PDP.",
+      "deleteTitle": "Hapus akun",
+      "deleteDescription": "Hapus data Anda secara permanen dalam 30 hari.",
+      "deleteToastTitle": "Konfirmasi email diperlukan",
+      "deleteToastDescription": "Cek kotak masuk Anda untuk menyelesaikan penghapusan akun.",
+      "revokeTitle": "Cabut semua persetujuan",
+      "revokeDescription": "Banner persetujuan akan muncul kembali.",
+      "revokeToastTitle": "Persetujuan dicabut",
+      "footerNote": "Project Neigo mematuhi Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi.",
+      "readFullPolicy": "Baca kebijakan privasi lengkap"
+    }
+  }
+}

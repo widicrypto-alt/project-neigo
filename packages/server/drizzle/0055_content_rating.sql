@@ -1,0 +1,2 @@
+-- PLANCHATv3 §4.6 — content_rating column already exists from previous deployment.
+-- No action needed. This file is kept for documentation purposes.

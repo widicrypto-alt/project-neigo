@@ -1,0 +1,197 @@
+{
+  "mode": "strict",
+  "generatedAt": "2026-04-27T11:53:09.735Z",
+  "timing": {
+    "debounceMs": 120,
+    "sameStateCooldownMs": 220,
+    "settleToIdleMs": 320,
+    "idleTimeoutMs": 12000,
+    "affectCooldownMs": 2000,
+    "flickerThresholdMs": 400
+  },
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "scenarios": [
+    {
+      "name": "normal-stream",
+      "ok": true,
+      "failures": [],
+      "path": "idle -> typing -> thinking -> speaking -> success -> idle",
+      "finalState": {
+        "activity": "idle",
+        "affect": "neutral",
+        "source": "system",
+        "updatedAt": 3440,
+        "affectUpdatedAt": 0
+      },
+      "metrics": {
+        "transitionCount": 5,
+        "flickerCount": 1,
+        "averageDwellMs": 532,
+        "currentDwellMs": 660,
+        "lastTransitionAt": 3440
+      },
+      "transitions": [
+        {
+          "atMs": 120,
+          "from": "idle",
+          "to": "typing",
+          "source": "user"
+        },
+        {
+          "atMs": 620,
+          "from": "typing",
+          "to": "thinking",
+          "source": "user"
+        },
+        {
+          "atMs": 1320,
+          "from": "thinking",
+          "to": "speaking",
+          "source": "model"
+        },
+        {
+          "atMs": 2880,
+          "from": "speaking",
+          "to": "success",
+          "source": "system"
+        },
+        {
+          "atMs": 3440,
+          "from": "success",
+          "to": "idle",
+          "source": "system"
+        }
+      ]
+    },
+    {
+      "name": "abort-stream",
+      "ok": true,
+      "failures": [],
+      "path": "idle -> thinking -> speaking -> error",
+      "finalState": {
+        "activity": "error",
+        "affect": "neutral",
+        "source": "system",
+        "updatedAt": 600,
+        "affectUpdatedAt": 0
+      },
+      "metrics": {
+        "transitionCount": 3,
+        "flickerCount": 3,
+        "averageDwellMs": 200,
+        "currentDwellMs": 1440,
+        "lastTransitionAt": 600
+      },
+      "transitions": [
+        {
+          "atMs": 120,
+          "from": "idle",
+          "to": "thinking",
+          "source": "user"
+        },
+        {
+          "atMs": 370,
+          "from": "thinking",
+          "to": "speaking",
+          "source": "model"
+        },
+        {
+          "atMs": 600,
+          "from": "speaking",
+          "to": "error",
+          "source": "system"
+        }
+      ]
+    },
+    {
+      "name": "retry-after-error",
+      "ok": true,
+      "failures": [],
+      "path": "idle -> thinking -> error -> thinking -> speaking -> success -> idle",
+      "finalState": {
+        "activity": "idle",
+        "affect": "neutral",
+        "source": "system",
+        "updatedAt": 3660,
+        "affectUpdatedAt": 0
+      },
+      "metrics": {
+        "transitionCount": 6,
+        "flickerCount": 2,
+        "averageDwellMs": 610,
+        "currentDwellMs": 740,
+        "lastTransitionAt": 3660
+      },
+      "transitions": [
+        {
+          "atMs": 120,
+          "from": "idle",
+          "to": "thinking",
+          "source": "user"
+        },
+        {
+          "atMs": 340,
+          "from": "thinking",
+          "to": "error",
+          "source": "model"
+        },
+        {
+          "atMs": 1920,
+          "from": "error",
+          "to": "thinking",
+          "source": "user"
+        },
+        {
+          "atMs": 2320,
+          "from": "thinking",
+          "to": "speaking",
+          "source": "model"
+        },
+        {
+          "atMs": 3100,
+          "from": "speaking",
+          "to": "success",
+          "source": "system"
+        },
+        {
+          "atMs": 3660,
+          "from": "success",
+          "to": "idle",
+          "source": "system"
+        }
+      ]
+    },
+    {
+      "name": "rapid-typing-burst",
+      "ok": true,
+      "failures": [],
+      "path": "idle -> typing",
+      "finalState": {
+        "activity": "typing",
+        "affect": "neutral",
+        "source": "user",
+        "updatedAt": 120,
+        "affectUpdatedAt": 0
+      },
+      "metrics": {
+        "transitionCount": 1,
+        "flickerCount": 1,
+        "averageDwellMs": 120,
+        "currentDwellMs": 1580,
+        "lastTransitionAt": 120
+      },
+      "transitions": [
+        {
+          "atMs": 120,
+          "from": "idle",
+          "to": "typing",
+          "source": "user"
+        }
+      ]
+    }
+  ]
+}

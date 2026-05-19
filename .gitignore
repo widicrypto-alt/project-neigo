@@ -1,0 +1,84 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+.turbo
+.cache
+
+# Environment variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.production.local
+*.env
+*.env.*
+*.secret
+*.pem
+*.key
+*.pub
+*.cert
+*.pfx
+*.p12
+*.jks
+credentials.json
+service-account.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+logs/
+
+# Editor & System
+.vscode/
+!.vscode/extensions.json
+.idea/
+.claude/
+.clinerules/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Root Scripts
+fix_calls.js
+refactor.js
+refactor2.js
+refactor_orchestrator.js
+
+# Database
+*.sqlite
+*.db
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+
+# Test & Coverage
+coverage/
+.nyc_output
+
+# Tooling
+.codex
+.vercel
+.netlify
+
+# TypeScript
+*.tsbuildinfo
+
+# OS related
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

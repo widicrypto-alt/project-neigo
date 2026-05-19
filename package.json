@@ -1,0 +1,27 @@
+{
+  "name": "project-neigo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "presence:replay": "turbo run presence:replay",
+    "presence:replay:strict": "turbo run presence:replay:strict",
+    "sprites:budget": "bash ops/scripts/sprite-budget.sh",
+    "sprites:budget:strict": "SPRITE_HARD_CAP_KB=400 bash ops/scripts/sprite-budget.sh",
+    "quality:ci": "turbo run lint typecheck presence:replay:strict",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.3",
+    "prettier": "^3.3.3",
+    "@types/node": "^22.9.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@neigo/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "presence:replay": "pnpm run presence:replay:tuning",
+    "presence:replay:tuning": "tsc --skipLibCheck --types node --pretty false --target ES2022 --module NodeNext --moduleResolution NodeNext --outDir .replay-tmp src/lib/presence.ts src/lib/presence-replay.ts && node .replay-tmp/presence-replay.js --mode=tuning --json-out=.replay-results/presence-replay.tuning.json && rm -rf .replay-tmp",
+    "presence:replay:strict": "tsc --skipLibCheck --types node --pretty false --target ES2022 --module NodeNext --moduleResolution NodeNext --outDir .replay-tmp src/lib/presence.ts src/lib/presence-replay.ts && node .replay-tmp/presence-replay.js --mode=strict --json-out=.replay-results/presence-replay.strict.json && rm -rf .replay-tmp",
+    "lh:budgets": "lhci autorun --config=./lighthouserc.json || true",
+    "clean": "rm -rf .next .turbo"
+  },
+  "dependencies": {
+    "@neigo/shared": "workspace:*",
+    "@tanstack/react-query": "^5.100.1",
+    "browser-image-compression": "^2.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.460.0",
+    "next": "^15.5.15",
+    "next-intl": "^4.9.1",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "shiki": "^4.0.2",
+    "tailwind-merge": "^2.5.4",
+    "turndown": "^7.2.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/turndown": "^5.0.6",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.15",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  }
+}

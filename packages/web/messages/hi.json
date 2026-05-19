@@ -1,0 +1,181 @@
+{
+  "common": {
+    "appName": "Project Neigo",
+    "tagline": "星夜詠み",
+    "back": "Back",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "signOut": "Sign out"
+  },
+  "chat": {
+    "composer": {
+      "placeholder": "Enter your response...",
+      "tierLimit": "Turn limit reached",
+      "turnFailed": "Last turn failed",
+      "turnFailedFallback": "Character did not finish the last reply.",
+      "apiKey": "API Key",
+      "retry": "Retry",
+      "incompleteTitle": "Response may be incomplete",
+      "incompleteBody": "The character's response was cut short.",
+      "continue": "Continue"
+    },
+    "cyoa": {
+      "groupLabel": "CHOOSE YOUR PATH",
+      "chipLabel": "Send: {label}",
+      "custom": "Write your own fate..."
+    },
+    "actions": {
+      "rewrite": "Rewrite Fate",
+      "rewind": "Rewind",
+      "branch": "Branch",
+      "resume": "Continue",
+      "clear": "Clear"
+    },
+    "status": {
+      "offline": "Leyline Severed",
+      "reconnecting": "Attempting to restore connection...",
+      "continuing": "continuing the tale..."
+    },
+    "notifications": {
+      "moodChange": "The atmosphere shifts: {mood}",
+      "undoFailed": "Failed to rewind the conversation."
+    },
+    "sfx": {
+      "candlelight": "Crackling fireplace...",
+      "moonlight": "Crickets in the night...",
+      "dawn": "Morning birdsong...",
+      "daylight": "Soft whispering wind...",
+      "dusk": "Evening stillness...",
+      "night": "Silent deep night..."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "discover": "Discover",
+    "roleplay": "Threads",
+    "settings": "Persona",
+    "ariaMain": "Main navigation"
+  },
+  "offline": {
+    "title": "You're offline",
+    "description": "Responses will resume automatically once you're back online."
+  },
+  "consent": {
+    "title": "Your privacy & data",
+    "body": "Under Indonesia's PDP Law 2022, we only process personal data with your consent. Only authentication and session storage are mandatory. Analytics and personalisation are optional.",
+    "readPolicy": "Read policy",
+    "acceptAll": "Accept all",
+    "rejectOptional": "Only essential",
+    "openSettings": "Preferences",
+    "sheetTitle": "Privacy preferences",
+    "sheetDescription": "You can change these anytime in Settings → Privacy.",
+    "essentialTitle": "Essential",
+    "essentialDescription": "Authentication, chat sessions, security. Required for the app to work.",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Anonymous aggregate data to improve response quality and performance.",
+    "personalisationTitle": "Personalisation",
+    "personalisationDescription": "Remember your persona, mood, and style for character recommendations."
+  },
+  "vn": {
+    "nextScene": "Next scene",
+    "theEnd": "The end",
+    "sceneChange": "Scene change",
+    "advanceScene": "Advance to next scene",
+    "disableMode": "Disable VN mode",
+    "restart": "Restart",
+    "delete": "Delete",
+    "endingReached": "Ending reached",
+    "endingBanner": "Ending reached: {slug}",
+    "chapterOne": "Chapter One · The Summoning"
+  },
+  "mc": {
+    "selector": {
+      "title": "Select MC (Main Character)",
+      "createLabel": "Create New",
+      "anonymousLabel": "Anonymous",
+      "anonymousHint": "Start with a simple MC without a profile",
+      "emptyState": "No MC profiles yet",
+      "emptyHint": "Create a new profile with the \"Create New\" button",
+      "charactersTab": "Your Characters",
+      "charactersEmpty": "No character cards found",
+      "charactersHint": "Create characters on the Characters page",
+      "setDefault": "Set as Default",
+      "isDefault": "Default",
+      "startStory": "Start Story",
+      "startAction": "Start",
+      "startFailed": "Failed to start story.",
+      "createFailed": "Failed to create MC profile."
+    },
+    "editor": {
+      "createTitle": "Create New MC Profile",
+      "editTitle": "Edit MC Profile",
+      "description": "Create the main character (MC) for your story. The MC is the persona you will use while playing.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter MC name...",
+      "nameError": "Please enter a name for your MC.",
+      "personalityLabel": "Personality",
+      "personalityPlaceholder": "Describe your MC's personality...",
+      "personalityError": "Please enter a personality description for your MC.",
+      "avatarLabel": "Avatar URL",
+      "avatarPlaceholder": "https://...",
+      "avatarHint": "Optional. Enter an image URL for the MC's avatar.",
+      "defaultLabel": "Set as default profile",
+      "defaultHint": "The default profile will be automatically selected when starting a new story.",
+      "deleteConfirm": "Are you sure you want to delete this MC profile?",
+      "deleteSuccess": "MC profile deleted",
+      "saveSuccess": "Changes saved.",
+      "createSuccess": "MC Profile created!",
+      "updateSuccess": "MC Profile updated!",
+      "saveFailed": "Failed to save MC profile. Please try again."
+    }
+  },
+  "settings": {
+    "notifications": {
+      "title": "Notifications",
+      "pushTitle": "Push notification",
+      "pushDescription": "Notify me when a favourite character replies outside the app.",
+      "pushEnabled": "Push enabled",
+      "pushDisabled": "Push disabled",
+      "pushUnsupported": "Browser doesn't support push",
+      "pushDenied": "Permission denied by browser",
+      "pushError": "Failed to request notification permission",
+      "inAppPingTitle": "In-app chat ping",
+      "inAppPingDescription": "Vibrate or play a sound when a streamed reply finishes.",
+      "weeklyTitle": "Weekly new characters",
+      "weeklyDescription": "Email / push once a week when new characters are released.",
+      "nudgeTitle": "Character nudges",
+      "nudgeDescription": "Let characters proactively start conversations (pilot).",
+      "footerNote": "Preferences are stored on this device. Multi-device sync will activate when the server notification endpoint is available."
+    },
+    "appearance": {
+      "title": "Appearance",
+      "dataSaverTitle": "Data saver",
+      "dataSaverDescription": "Disable aurora and background animations. Best for slow networks.",
+      "reduceMotionTitle": "Reduce motion",
+      "reduceMotionDescription": "Reduce transition animations. Your OS may also control this.",
+      "batteryNote": "When battery drops below 15%, Project Neigo automatically disables background animations to save power."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "consentSection": "Data consent",
+      "rightsSection": "Your rights",
+      "exportTitle": "Export my data",
+      "exportDescription": "Download all transcripts, characters, and account metadata.",
+      "exportToastTitle": "Export request sent",
+      "exportToastDescription": "We'll email the JSON file within 48 hours per PDP Law.",
+      "deleteTitle": "Delete account",
+      "deleteDescription": "Permanently delete your data within 30 days.",
+      "deleteToastTitle": "Email confirmation required",
+      "deleteToastDescription": "Check your inbox to complete account deletion.",
+      "revokeTitle": "Revoke all consents",
+      "revokeDescription": "The consent banner will appear again.",
+      "revokeToastTitle": "Consents revoked",
+      "footerNote": "Project Neigo complies with Indonesia's Law No. 27/2022 on Personal Data Protection.",
+      "readFullPolicy": "Read full privacy policy"
+    }
+  }
+}

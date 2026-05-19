@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "..",
+    "types": ["bun"],
+    "paths": {
+      "@neigo/shared": ["../shared/src/index.ts"],
+      "@neigo/shared/*": ["../shared/src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,151 @@
+/*
+ * Hoshiyomi design tokens — wk4 pre-flight.
+ *
+ * Single source of truth for spacing, radius, duration, easing, text-size,
+ * and z-index. Imported before globals.css so every component can read
+ * these CSS custom properties.
+ *
+ * Tailwind v3 stays authoritative for color (see tailwind.config.ts). Colors
+ * are mirrored as CSS vars here only when we need them outside utility classes
+ * (e.g. inline style attributes for aurora blobs).
+ *
+ * Do NOT add per-component ad-hoc pixel values anywhere else in the codebase.
+ * Grep-based CI lint will land in a follow-up.
+ */
+
+:root {
+  /* ── Spacing (8px grid) ────────────────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 48px;
+
+  /* ── Radius ─────────────────────────────────────────────────────────── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ── Text size scale (matches Tailwind text-{xs..3xl}) ──────────────── */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 36px;
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --duration-instant: 0ms;
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-slow: 420ms;
+
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --easing-enter: cubic-bezier(0, 0, 0, 1);
+  --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+
+  /* ── Shadows (dark-mode tuned) ──────────────────────────────────────── */
+  --shadow-card: 0 10px 30px -18px rgba(0, 0, 0, 0.75);
+  --shadow-lift: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+  --shadow-hero: 0 40px 80px -24px rgba(0, 0, 0, 0.8);
+
+  /* ── Tap targets (WCAG 2.5.5 min 44×44 CSS px) ──────────────────────── */
+  --tap-min: 44px;
+
+  /* ── Z-index stack (centralised) ────────────────────────────────────── */
+  --z-base: 0;
+  --z-header: 30;
+  --z-drawer: 40;
+  --z-sheet: 50;
+  --z-toast: 60;
+  --z-modal: 70;
+
+  /* ── Aurora anchors (mirrored from Tailwind palette) ────────────────── */
+  --aurora-a: 236 72 153;  /* accent-500 */
+  --aurora-b: 139 92 246;  /* iris-500 */
+  --aurora-c: 232 154 92;  /* warmth-500 */
+
+  /* ── Breakpoints (documented; Tailwind resolves at config time) ─────── */
+  --bp-sm: 640px;
+  --bp-lg: 1024px;   /* 1-col → 2-col pivot (FRONTEND.md §17.1 Q5) */
+  --bp-2xl: 1536px;
+
+  /* ── D6 semantic palette aliases (REDESIGNv2 §8.8) ─────────────────────── */
+  /* Maps to existing Tailwind colors; use these CSS vars when you need them
+     in inline styles or non-Tailwind contexts. */
+  --d6-canvas:      #0B0B14;   /* ink-950 equivalent */
+  --d6-surface:     #14141E;   /* night.bg */
+  --d6-surface-2:   #1C1C2A;   /* night.surface2 */
+  --d6-accent:      #8B5CF6;   /* violet.accent */
+  --d6-accent-hot:  #A78BFA;   /* violet.hot */
+  --d6-accent-cool: #60A5FA;   /* violet.cool */
+  --d6-text-1:      #F5F5FA;   /* ink-50 */
+  --d6-text-2:      #C4C4D4;   /* ink-200 */
+  --d6-text-3:      #6B6B80;   /* ink-500 */
+}
+
+/*
+ * Reduced-motion: collapse every animation we ship to ~instant. Keeps
+ * layout stable but drops the cinematic sweep for users who've asked for it.
+ * WCAG 2.3.3 compliance.
+ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: var(--duration-instant);
+    --duration-base: var(--duration-instant);
+    --duration-slow: var(--duration-instant);
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Data-saver opt-in class (applied on <html> by user setting).
+ * Same cost-cutters as reduced-motion plus disables the aurora animation.
+ * Wired up in wk15+ per FRONTEND §10.4.
+ */
+html.hoshi-data-saver {
+  --duration-base: var(--duration-instant);
+}
+html.hoshi-data-saver .hoshi-aurora-motion {
+  animation: none !important;
+}
+
+/*
+ * Low-battery fallback class (applied on <html> when navigator.getBattery
+ * reports level < 0.15 with charging=false).
+ * Less aggressive than data-saver: keep fades, kill float loops.
+ */
+html.hoshi-low-battery .hoshi-aurora-motion {
+  animation: none !important;
+}
+
+/*
+ * User-forced reduce-motion (Settings → Appearance). Mirrors the OS media
+ * query rules so the toggle works even when OS-level pref isn't set.
+ */
+html.hoshi-reduce-motion {
+  --duration-fast: var(--duration-instant);
+  --duration-base: var(--duration-instant);
+  --duration-slow: var(--duration-instant);
+}
+html.hoshi-reduce-motion *,
+html.hoshi-reduce-motion *::before,
+html.hoshi-reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}

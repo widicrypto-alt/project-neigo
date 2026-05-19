@@ -1,0 +1,31 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "pnpm --filter @neigo/web start",
+      "startServerReadyPattern": "Ready|started server",
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/discover",
+        "http://localhost:3000/settings"
+      ],
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop",
+        "budgetsPath": "./lighthouse.budgets.json"
+      }
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["warn", { "minScore": 0.85 }],
+        "categories:accessibility": ["error", { "minScore": 0.9 }],
+        "categories:best-practices": ["warn", { "minScore": 0.9 }],
+        "categories:seo": ["warn", { "minScore": 0.9 }],
+        "performance-budget": "warn",
+        "timing-budget": "warn"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
